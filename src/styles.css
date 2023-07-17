@@ -94,6 +94,6 @@ button {
 
 .fa-rotate::before,
 .fa-sync-alt::before {
-  content: "\f2f1";
+  content: "f2f1";
   color: cornflowerblue;
 }
