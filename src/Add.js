@@ -46,13 +46,12 @@ export default class AddList {
     }
   }
 
- addRow(todo) {
-  const { title, completed, index } = todo;
-  const newTodo = { title, completed, index };
-  this.todoDetails.push(newTodo);
-  localStorage.setItem('todoData', JSON.stringify(this.todoDetails));
-}
-
+  addRow(todo) {
+    const { title, completed, index } = todo;
+    const newTodo = { title, completed, index };
+    this.todoDetails.push(newTodo);
+    localStorage.setItem('todoData', JSON.stringify(this.todoDetails));
+  }
 
   deleteRow(index) {
     this.todoDetails.splice(index, 1);
